@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+  <title>R25: Meme-Generator</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Meme-Generator!</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="form-container">
+      <h2>Input Lolz here:</h2>
+      <form id="meme-form">
+
+        <label for="image-link">Link to Image</label> <br>
+        <input name="image" type="url" id="image-link"> <br>
+
+        <label for="">Top line text</label><br>
+        <input name="top" type="text" class="text-input" id="top-line"> <br>
+
+        <label for="">Bottom line text</label><br>
+        <input name="bottom" type="text" class="text-input" id="bottom-line"> <br>
+
+        <input type="submit" id="form-submit">
+      </form>
+
+    </div>
+
+    <div class="meme-container">
+      <h2>View Lolz here:</h2>
+      <div id="showMemes"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Copyright Caleb Wood © 2022</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
